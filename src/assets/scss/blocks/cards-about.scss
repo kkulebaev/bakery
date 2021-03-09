@@ -1,0 +1,60 @@
+.cards-about {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(2, 230px);
+    width: 50%;
+
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cards-about__item {
+    padding: 0.5rem;
+    max-width: 280px;
+    max-height: 230px;
+
+    align-self: center;
+    justify-self: center;
+
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 90%;
+        height: 88%;
+
+        border: solid 5px $white;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
+
+.cards-about__promo {
+    fill: $white;
+    opacity: 0.85;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.cards-about__promo-text {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c9b176;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate3d(-50%, -50%, 0);
+}

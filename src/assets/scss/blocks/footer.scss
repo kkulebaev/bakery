@@ -1,0 +1,15 @@
+.footer {
+    background: #383632;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copy {
+    font-size: 1.5rem;
+    color: $white;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+.category {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: 150px;
+    justify-content: center;
+    grid-gap: 5rem;
+
+    margin: 1rem 0 4rem 0;
+}
+
+.category__item {
+    margin: 0 2rem;
+
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    opacity: 0.8;
+
+    transition: opacity 0.1s linear;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &--active {
+        border-color: #f6b64d;
+    }
+}
+
+.category__title {
+    font-size: 2rem;
+    text-align: center;
+}

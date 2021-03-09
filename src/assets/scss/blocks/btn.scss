@@ -1,0 +1,23 @@
+.btn {
+    padding: 1.5em 3.6em;
+
+    font-size: 1.4rem;
+    font-family: inherit;
+    color: $white;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+
+    border: none;
+    background: rgba($primary, 0.5);
+    cursor: pointer;
+
+    transition: background-color 0.2s linear;
+
+    &:hover {
+        background-color: darken(rgba($primary, 0.5), 30%);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

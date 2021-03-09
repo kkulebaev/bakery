@@ -1,0 +1,79 @@
+.chef-cook {
+    width: 100%;
+    max-width: 370px;
+}
+.chef-cook__title {
+    margin-bottom: 2rem;
+
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.chef-cook__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chef-cook__photo {
+    padding: 1rem;
+    border-radius: 50%;
+
+    max-width: 100px;
+}
+
+.chef-cook__name,
+.chef-cook__surname {
+    padding: 1rem;
+    width: 100%;
+    max-width: 130px;
+
+    font-size: 3rem;
+    color: $primary;
+    text-align: center;
+
+    border-top: solid 1px #d7d5ca;
+    border-bottom: solid 1px #d7d5ca;
+}
+
+.chef-cook__phrase {
+    margin: 2rem auto 0 auto;
+    max-width: 230px;
+
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.4rem;
+    color: $brown;
+    text-align: center;
+
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+
+        background-image: url('../images/icons/quote.svg');
+        background-size: cover;
+
+        position: absolute;
+        top: -1.5rem;
+        left: -2.5rem;
+
+        transform: rotate(180deg);
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+
+        background-image: url('../images/icons/back-quote.svg');
+        background-size: cover;
+
+        position: absolute;
+        bottom: -1.5rem;
+        right: -2.5rem;
+    }
+}

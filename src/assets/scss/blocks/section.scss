@@ -1,0 +1,29 @@
+.section__title {
+    margin: 1rem 0 0 0;
+
+    font-size: 4.8rem;
+    color: $primary;
+    text-align: center;
+    word-spacing: 0.8rem;
+}
+
+.section__subtitle {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $brown;
+    text-align: center;
+}
+
+.section__text {
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    max-width: 400px;
+
+    font-size: 1.4rem;
+    color: $primary;
+    text-align: center;
+}
+
+.section__p {
+    margin: 0.5rem 0;
+}

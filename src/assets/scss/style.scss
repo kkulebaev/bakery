@@ -1,0 +1,59 @@
+@import '_vars.scss';
+
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+
+    font-family: 'Alegreya', serif;
+    font-size: 1.4rem;
+    color: $primary;
+
+    background: $white;
+    background-image: url('../images/background.png');
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+//   Blocks
+// ===========
+
+@import 'blocks/container.scss';
+@import 'blocks/btn.scss';
+@import 'blocks/helpers.scss';
+@import 'blocks/section.scss';
+@import 'blocks/header.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/nav.scss';
+@import 'blocks/social.scss';
+@import 'blocks/intro.scss';
+@import 'blocks/menu.scss';
+@import 'blocks/category.scss';
+@import 'blocks/cards.scss';
+@import 'blocks/about.scss';
+@import 'blocks/chef-cook.scss';
+@import 'blocks/cards-about.scss';
+@import 'blocks/pastry.scss';
+@import 'blocks/pastry-slider.scss';
+@import 'blocks/parallax.scss';
+@import 'blocks/instagram.scss';
+@import 'blocks/insta-cards.scss';
+@import 'blocks/footer.scss';

@@ -1,0 +1,32 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    margin: 4rem 0;
+}
+
+.cards__item {
+    margin: 1rem;
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.cards__image {
+    margin: 0 auto;
+}
+
+.cards__title {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cards__desc,
+.cards__price {
+    text-align: center;
+    color: $gray;
+}

@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+
+    background: rgba($primary, 0.5);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    &.fixed {
+        position: fixed;
+    }
+}
+
+.header__inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}

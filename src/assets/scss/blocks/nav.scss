@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+}
+
+.nav__link {
+    padding: 1.5rem 3rem;
+
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: color 0.2s linear;
+
+    &:after {
+        content: '~';
+        display: block;
+
+        color: $white;
+
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        transform: translateY(-50%);
+    }
+
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+
+    &:hover {
+        color: darken($primary, 15%);
+    }
+}
