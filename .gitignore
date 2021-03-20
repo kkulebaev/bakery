@@ -1,5 +1,2 @@
 node_modules
-originals images
-src
-gulpfile.js
-package-lock.json
+dist
