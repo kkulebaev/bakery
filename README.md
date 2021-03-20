@@ -1,2 +1,2 @@
-# bakery-shop
+# Bakery-shop
 Landing page for bakery shop
