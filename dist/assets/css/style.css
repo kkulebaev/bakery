@@ -54,6 +54,10 @@ p {
     background-color: rgba(5, 5, 4, 0.5);
 }
 
+.btn:focus {
+    outline: none;
+}
+
 .img {
     display: block;
     max-width: 100%;
@@ -104,6 +108,10 @@ p {
     top: 0;
     left: 0;
     z-index: 1000;
+}
+
+.header.fixed {
+    position: fixed;
 }
 
 .header__inner {
@@ -194,13 +202,15 @@ p {
 }
 
 .intro__logo {
-    display: block;
-    width: 100%;
+    margin: auto;
     height: 100vh;
-    background-color: #56534c;
+    max-width: 100vw;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     z-index: -1;
 }
 
@@ -219,9 +229,10 @@ p {
     max-width: 570px;
     margin-bottom: 7rem;
     font-size: 2.4rem;
+    font-weight: 400;
     text-align: center;
     color: #fdfdfc;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
 }
 
 .menu {
@@ -270,6 +281,10 @@ p {
 
 .cards__item {
     margin: 1rem;
+}
+
+.cards__item--hidden {
+    display: none;
 }
 
 .cards__image {
