@@ -1,15 +1,26 @@
 .footer {
-    background: #383632;
+  background: #383632;
+  padding: 0.5rem 0;
 }
 
 .footer__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__copy {
-    font-size: 1.5rem;
-    color: $white;
-    text-align: center;
+  font-size: 1.5rem;
+  color: $white;
+  text-align: center;
+
+  @media ($extra-small) {
+    font-size: 1.2rem;
+  }
+}
+
+.footer__logo {
+  @media ($extra-small) {
+    display: none;
+  }
 }

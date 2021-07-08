@@ -1,41 +1,49 @@
 .nav {
-    display: flex;
+  display: flex;
+
+  @media ($medium) {
+    display: none;
+  }
 }
 
 .nav__link {
-    padding: 1.5rem 3rem;
+  padding: 1.5rem 3rem;
+
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+
+  position: relative;
+
+  cursor: pointer;
+
+  transition: color 0.2s linear;
+
+  &:after {
+    content: '~';
+    display: block;
 
     color: $white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
 
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 0;
 
-    cursor: pointer;
+    transform: translateY(-50%);
+  }
 
-    transition: color 0.2s linear;
-
+  &:last-child {
     &:after {
-        content: '~';
-        display: block;
-
-        color: $white;
-
-        position: absolute;
-        top: 50%;
-        right: 0;
-
-        transform: translateY(-50%);
+      display: none;
     }
+  }
 
-    &:last-child {
-        &:after {
-            display: none;
-        }
-    }
+  &:hover {
+    color: darken($primary, 15%);
+  }
 
-    &:hover {
-        color: darken($primary, 15%);
-    }
+  @media ($large) {
+    padding: 1.5rem 2.2rem;
+  }
 }

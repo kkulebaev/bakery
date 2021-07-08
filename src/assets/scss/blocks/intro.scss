@@ -1,46 +1,59 @@
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-    position: relative;
+  position: relative;
 }
 
 .intro__logo {
-    margin: auto;
-    height: 100vh;
-    max-width: 100vw;
-    width: 100%;
+  margin: auto;
+  height: 100vh;
+  max-width: 100vw;
+  width: 100%;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .intro__title {
-    display: block;
-    margin-bottom: 11rem;
+  display: block;
+  margin: 0 3rem 11rem;
 
-    font-family: 'Playfair Display', serif;
-    font-size: 9.2rem;
-    text-align: center;
-    color: $white;
-    letter-spacing: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 9.2rem;
+  text-align: center;
+  color: $white;
+  letter-spacing: 0.5rem;
+
+  @media ($medium) {
+    font-size: 7.5rem;
+  }
+
+  @media ($small) {
+    font-size: 6.1rem;
+    margin-bottom: 7rem;
+  }
+
+  @media ($extra-small) {
+    font-size: 4.7rem;
+  }
 }
 
 .intro__subtitle {
-    display: block;
-    max-width: 570px;
-    margin-bottom: 7rem;
+  display: block;
+  max-width: 570px;
+  margin: 0 3rem 7rem;
 
-    font-size: 2.4rem;
-    font-weight: 400;
-    text-align: center;
-    color: $white;
-    letter-spacing: 0.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+  letter-spacing: 0.2rem;
 }

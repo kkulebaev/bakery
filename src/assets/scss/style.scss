@@ -1,23 +1,23 @@
 @import '_vars.scss';
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    margin: 0;
+  margin: 0;
 
-    font-family: 'Alegreya', serif;
-    font-size: 1.4rem;
-    color: $primary;
+  font-family: 'Alegreya', serif;
+  font-size: 1.4rem;
+  color: $primary;
 
-    background: $white;
-    background-image: url('../images/background.png');
+  background: $white;
+  background-image: url('../images/background.png');
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -26,11 +26,11 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 //   Blocks
@@ -44,6 +44,7 @@ p {
 @import 'blocks/logo.scss';
 @import 'blocks/nav.scss';
 @import 'blocks/social.scss';
+@import 'blocks/burger.scss';
 @import 'blocks/intro.scss';
 @import 'blocks/menu.scss';
 @import 'blocks/category.scss';

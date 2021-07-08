@@ -1,11 +1,15 @@
 .about {
-    padding: 10rem 0;
+  padding: 10rem 0;
+
+  @media ($medium) {
+    display: none;
+  }
 }
 
 .about__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }

@@ -1,7 +1,8 @@
 .pastry-slider {
     display: flex;
-    width: 960px;
-    height: 500px;
+    width: 100%;
+    max-width: 960px;
+    max-height: 500px;
 
     background: $primary;
     background-image: url('../images/bg-paper.jpg');
