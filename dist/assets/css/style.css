@@ -139,6 +139,12 @@ p {
     display: flex;
 }
 
+@media (max-width: 991px) {
+    .nav {
+        display: none;
+    }
+}
+
 .nav__link {
     padding: 1.5rem 3rem;
     color: #fdfdfc;
@@ -175,12 +181,6 @@ p {
     }
 }
 
-@media (max-width: 991px) {
-    .nav__link {
-        display: none;
-    }
-}
-
 .social {
     display: -ms-flexbox;
     display: flex;
@@ -204,6 +204,79 @@ p {
     height: 20px;
     fill: #fdfdfc;
     transition: fill 0.2s linear;
+}
+
+.burger {
+    display: none;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger--active .burger__item {
+    height: 0;
+}
+
+.burger--active .burger__item:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.burger--active .burger__item:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.burger:focus {
+    outline: 0;
+}
+
+@media (max-width: 991px) {
+    .burger {
+        display: block;
+    }
+}
+
+.burger__item {
+    display: block;
+    width: 3rem;
+    height: 0.4rem;
+    font-size: 0;
+    color: transparent;
+    background-color: #fdfdfc;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.2rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    transition: 0.2s;
+}
+
+.burger__item:before, .burger__item:after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 0.4rem;
+    background-color: #fdfdfc;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.2rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    transition: 0.5s;
+}
+
+.burger__item:before {
+    -webkit-transform: translateY(-0.8rem);
+    transform: translateY(-0.8rem);
+}
+
+.burger__item:after {
+    -webkit-transform: translateY(0.8rem);
+    transform: translateY(0.8rem);
 }
 
 .intro {
@@ -234,7 +307,7 @@ p {
 
 .intro__title {
     display: block;
-    margin-bottom: 11rem;
+    margin: 0 3rem 11rem;
     font-family: 'Playfair Display', serif;
     font-size: 9.2rem;
     text-align: center;
@@ -242,10 +315,29 @@ p {
     letter-spacing: 0.5rem;
 }
 
+@media (max-width: 991px) {
+    .intro__title {
+        font-size: 7.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro__title {
+        font-size: 6.1rem;
+        margin-bottom: 7rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .intro__title {
+        font-size: 4.7rem;
+    }
+}
+
 .intro__subtitle {
     display: block;
     max-width: 570px;
-    margin-bottom: 7rem;
+    margin: 0 3rem 7rem;
     font-size: 2.4rem;
     font-weight: 400;
     text-align: center;
@@ -260,12 +352,17 @@ p {
 
 .category {
     display: grid;
-    grid-template-columns: repeat(5, 150px);
-    grid-template-rows: 150px;
+    grid-template-columns: repeat(5, 15%);
     -ms-flex-pack: center;
     justify-content: center;
     grid-gap: 5rem;
     margin: 1rem 0 4rem 0;
+}
+
+@media (max-width: 767px) {
+    .category {
+        display: none;
+    }
 }
 
 .category__item {
@@ -297,6 +394,18 @@ p {
     margin: 4rem 0;
 }
 
+@media (max-width: 767px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .cards__item {
     margin: 1rem;
 }
@@ -323,6 +432,12 @@ p {
 
 .about {
     padding: 10rem 0;
+}
+
+@media (max-width: 991px) {
+    .about {
+        display: none;
+    }
 }
 
 .about__content {
@@ -478,7 +593,7 @@ p {
 
 @media (max-width: 991px) {
     .pastry {
-        min-height: 360px;
+        display: none;
     }
 }
 
@@ -580,26 +695,43 @@ p {
 }
 
 .instagram {
-    min-height: 760px;
     padding: 2rem 0;
 }
 
 .insta-cards {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(3, 29%);
     -ms-flex-pack: center;
     justify-content: center;
     grid-gap: 2rem;
     margin: 2rem 0 4rem 0;
 }
 
+@media (max-width: 767px) {
+    .insta-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .insta-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .insta-cards__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
     box-shadow: 0 0 6px 0 #121212;
 }
 
 .footer {
     background: #383632;
+    padding: 0.5rem 0;
 }
 
 .footer__inner {
@@ -615,4 +747,16 @@ p {
     font-size: 1.5rem;
     color: #fdfdfc;
     text-align: center;
+}
+
+@media (max-width: 575px) {
+    .footer__copy {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer__logo {
+        display: none;
+    }
 }
