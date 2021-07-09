@@ -53,14 +53,14 @@ $(function () {
 
   /* Burger menu 
     ========================*/
-  // let nav = document.querySelector('#nav')
-  // let burger = document.querySelector('#burger')
+  let nav = document.querySelector('#nav')
+  let burger = document.querySelector('#burger')
 
-  // $(burger).on('click', function (event) {
-  //     event.preventDefault()
-  //     $(burger).toggleClass('burger--active')
-  //     $(nav).toggleClass('nav--active')
-  // })
+  $(burger).on('click', function (event) {
+    event.preventDefault()
+    $(burger).toggleClass('burger--active')
+    $(nav).toggleClass('nav--active')
+  })
 
   /* Filter
     ========================*/

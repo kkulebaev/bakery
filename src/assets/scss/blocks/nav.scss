@@ -6,6 +6,39 @@
   }
 }
 
+.nav--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  width: 100%;
+  padding: 1.5rem 0;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+
+  background: $gray;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  & .nav__link {
+    padding: 1.5rem 0;
+  }
+
+  & .nav__link:nth-child(3) {
+    display: none;
+  }
+
+  & .nav__link:nth-child(4) {
+    display: none;
+  }
+}
+
 .nav__link {
   padding: 1.5rem 3rem;
 
@@ -31,6 +64,10 @@
     right: 0;
 
     transform: translateY(-50%);
+
+    @media ($medium) {
+      display: none;
+    }
   }
 
   &:last-child {
